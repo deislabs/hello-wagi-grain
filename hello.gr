@@ -1,0 +1,11 @@
+import Process from "sys/process"
+import Array from "array"
+
+print("content-type: text/plain\n")
+print("==== Environment: ====")
+
+Array.forEach( print, Process.env() )
+
+print("==== Args: ====")
+
+Array.forEach( print, Process.argv())
