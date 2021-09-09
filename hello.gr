@@ -5,9 +5,15 @@ print("content-type: text/plain\n")
 
 // This will print all the Wagi env variable
 print("==== Environment: ====")
-Array.forEach( print, Process.env() )
+match (Process.env()) {
+  Err(err) => throw err,
+  Ok(env) => Array.forEach(print, env),
+}
 
 // This will print the route path followed by each query
 // param. So /foo?bar=baz will be ["/foo", "bar=baz"].
 print("==== Args: ====")
-Array.forEach( print, Process.argv())
+match (Process.argv()) {
+  Err(err) => throw err,
+  Ok(env) => Array.forEach(print, env),
+}

@@ -5,13 +5,13 @@
 This repository provides a simple module that works with [Wagi](https://github.com/deislabs/wagi).
 It illustrates how easy it is to write HTTP responders with Grain and Wagi.
 
-This version is built on Grain 0.3, and relies on Grain 0.3's static compiler.
+This version is built on Grain 0.4, and relies on Grain 0.4's static compiler.
 Grain is a rapidly evolving language, and this code may not work on other versions of Grain.
 
 ## Building
 
 There is already a `hello.gr.wasm` binary checked in.
-To build from source, [install Grain]()
+To build from source, [install Grain](https://grain-lang.org/docs/getting_grain)
 and then use this command to compile:
 
 ```console
